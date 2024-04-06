@@ -1,21 +1,30 @@
 {
   "name": "koishi-plugin-qubic",
-  "description": "",
+  "description": "get mining qubic information",
   "version": "0.0.1",
-  "main": "lib/index.js",
-  "typings": "lib/index.d.ts",
+  "main": "src/index.ts",
   "files": [
-    "lib",
-    "dist"
+    "src"
   ],
+  "koishi": {
+    "description": {
+      "zh": "自用qubic挖矿插件"
+    },
+    "service": {
+      "required": [
+        "database"
+      ]
+    },
+    "locales": [
+      "zh"
+    ]
+  },
   "license": "MIT",
-  "scripts": {},
   "keywords": [
     "chatbot",
     "koishi",
     "plugin"
   ],
-  "devDependencies": {},
   "peerDependencies": {
     "koishi": "4.17.3"
   }
